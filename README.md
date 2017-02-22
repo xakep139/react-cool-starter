@@ -45,7 +45,7 @@ Really cool starter boilerplate with the most popular technologies:
 * No other view engines, just javascript based HTML rendering template.
 * Shared app config between development and production.
 * 404 error page and redirect handling.
-* [karma](https://karma-runner.github.io/1.0/index.html), [mocha](https://mochajs.org/), [enzyme](https://github.com/airbnb/enzyme), [chai](http://chaijs.com/) and [sinon](https://github.com/sinonjs/sinon) as the integrated solution for wrting unit tests.
+* [karma](https://karma-runner.github.io/1.0/index.html), [mocha](https://mochajs.org/), [enzyme](https://github.com/airbnb/enzyme), [chai](http://chaijs.com/) and [sinon](https://github.com/sinonjs/sinon) as the integrated solution for writing unit tests.
 * Testing code coverage support.
 * [Yarn](https://yarnpkg.com/lang/en/) as the package manager.
 
@@ -82,7 +82,7 @@ Now the app should be running at [http://localhost:8080/](http://localhost:8080/
 
 ## NPM Script Commands
 
-I use [better-npm-run](https://github.com/benoror/better-npm-run) to manage the scripts in a better way, which also provides the compatibility of corss-platform. All of the scripts are listed as following:
+I use [better-npm-run](https://github.com/benoror/better-npm-run) to manage the scripts in a better way, which also provides the compatibility of cross-platform. All of the scripts are listed as following:
 
 `yarn <script>`|Description
 ------------------|-----------
@@ -144,7 +144,7 @@ Here is the structure of the app, which serve as generally accepted guidelines a
 
 ## Server Side Security and Performance
 
-Concering to the security and performance for Express in production, I already setup some middlewares for you:
+Concerning to the security and performance for Express in production, I already setup some middlewares for you:
 
 * [helmet](https://github.com/helmetjs/helmet) - Helps secure Express server with various HTTP headers.
 * [hpp](https://github.com/analog-nico/hpp) - Express middleware to protect against HTTP Parameter Pollution attacks.
@@ -237,7 +237,7 @@ The parent `App.js` defines the base title and meta in a `<Helmet {...config.app
 
 ### App config
 
-You can store app settings under `./src/config`. By default the `default.js` will be loaded. If the `process.env.NODE_ENV` matches to production, the `prod.js` will be used insteadlly, and it inherits the data info from `default.js`.
+You can store app settings under `./src/config`. By default the `default.js` will be loaded. If the `process.env.NODE_ENV` matches to production, the `prod.js` will be used instead, and it inherits the data info from `default.js`.
 
 You can access the correct config with:
 
@@ -371,7 +371,7 @@ You can write dispatches for actions that must be called for the container to be
 ```javascript
 // Write a static function which be called by server and client
 static fetchData(dispatch, params) {
-  // Add the asynchronous actions which must be called while paga loading here
+  // Add the asynchronous actions which must be called while page loading here
   return Promise.all([
     dispatch(action.fetchDataIfNeeded(params.id)),
   ]);
@@ -411,7 +411,7 @@ class Home extends PureComponent {  // Use PureComponent instead of Component
 
 ### JavaScript and Style Lint
 
-[JavaScript lint](https://github.com/MoOx/eslint-loader) and [style lint](https://github.com/JaKXz/stylelint-webpack-plugin) are included into webpack compiling for runtime checking. If you don't want them be actived during developing, you can turn off those from `./tools/webpack/config.js` and do the mannually checking by `yarn lint`.
+[JavaScript lint](https://github.com/MoOx/eslint-loader) and [style lint](https://github.com/JaKXz/stylelint-webpack-plugin) are included into webpack compiling for runtime checking. If you don't want them be activated during developing, you can turn off those from `./tools/webpack/config.js` and do the manually checking by `yarn lint`.
 
 
 ### Unit Tests
